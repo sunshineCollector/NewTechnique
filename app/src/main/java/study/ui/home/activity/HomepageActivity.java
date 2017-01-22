@@ -19,6 +19,7 @@ import org.litepal.crud.DataSupport;
 import org.litepal.tablemanager.Connector;
 
 import java.util.List;
+
 import butterknife.BindView;
 import butterknife.OnClick;
 import study.base.BaseActivity;
