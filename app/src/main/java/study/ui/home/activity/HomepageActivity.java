@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.ui.home.activity;
+package study.ui.home.activity;
 
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -19,15 +19,14 @@ import org.litepal.crud.DataSupport;
 import org.litepal.tablemanager.Connector;
 
 import java.util.List;
-
-import artframe.study.sunshine.artframe.R;
-import artframe.study.sunshine.artframe.base.BaseActivity;
-import artframe.study.sunshine.artframe.model.bean.BookBean;
-import artframe.study.sunshine.artframe.presenter.HomepagePresenter;
-import artframe.study.sunshine.artframe.presenter.contract.HomepageContract;
-import artframe.study.sunshine.artframe.ui.home.adapter.HomepageAdapter;
 import butterknife.BindView;
 import butterknife.OnClick;
+import study.base.BaseActivity;
+import study.model.bean.BookBean;
+import study.presenter.HomepagePresenter;
+import study.presenter.contract.HomepageContract;
+import study.sunshine.newTechnique.R;
+import study.ui.home.adapter.HomepageAdapter;
 
 public class HomepageActivity extends BaseActivity<HomepagePresenter> implements HomepageContract.View {
     private static final String TAG = "LoginActivity";

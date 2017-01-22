@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.base;
+package study.base;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,10 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 
 import javax.inject.Inject;
 
-import artframe.study.sunshine.artframe.app.App;
-import artframe.study.sunshine.artframe.utils.NetUtils;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import study.app.App;
+import study.utils.NetUtils;
 
 /**
  * Created by xiaofeng on 2016/12/20.

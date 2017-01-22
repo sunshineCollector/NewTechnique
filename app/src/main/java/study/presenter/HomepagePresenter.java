@@ -1,15 +1,15 @@
-package artframe.study.sunshine.artframe.presenter;
+package study.presenter;
 
 import android.os.SystemClock;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import artframe.study.sunshine.artframe.R;
-import artframe.study.sunshine.artframe.model.bean.FruitBean;
-import artframe.study.sunshine.artframe.presenter.contract.HomepageContract;
-import artframe.study.sunshine.artframe.ui.home.adapter.HomepageAdapter;
-import artframe.study.sunshine.artframe.ui.home.activity.HomepageActivity;
+import study.model.bean.FruitBean;
+import study.presenter.contract.HomepageContract;
+import study.sunshine.newTechnique.R;
+import study.ui.home.activity.HomepageActivity;
+import study.ui.home.adapter.HomepageAdapter;
 
 /**
  * Created by xiaofeng on 2016/12/20.

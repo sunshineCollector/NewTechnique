@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.model.bean;
+package study.model.bean;
 
 /**
  * Created by Administrator on 2016/12/12.

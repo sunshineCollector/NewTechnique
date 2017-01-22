@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.model.bean;
+package study.model.bean;
 
 import android.support.annotation.IdRes;
 

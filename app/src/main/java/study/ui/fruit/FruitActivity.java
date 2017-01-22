@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.ui.fruit;
+package study.ui.fruit;
 
 import android.content.Intent;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-import artframe.study.sunshine.artframe.R;
-import artframe.study.sunshine.artframe.base.BaseActivity;
-import artframe.study.sunshine.artframe.presenter.FruitPresenter;
-import artframe.study.sunshine.artframe.presenter.contract.FruitContract;
 import butterknife.BindView;
+import study.base.BaseActivity;
+import study.presenter.FruitPresenter;
+import study.presenter.contract.FruitContract;
+import study.sunshine.newTechnique.R;
 
 /**
  * Created by xiaofeng on 2017/1/10.

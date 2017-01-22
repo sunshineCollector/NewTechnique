@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.app;
+package study.app;
 
 import android.app.Activity;
 

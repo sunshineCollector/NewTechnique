@@ -1,7 +1,7 @@
-package artframe.study.sunshine.artframe.presenter;
+package study.presenter;
 
 
-import artframe.study.sunshine.artframe.presenter.contract.FruitContract;
+import study.presenter.contract.FruitContract;
 
 /**
  * Created by xiaofeng on 2017/1/10.

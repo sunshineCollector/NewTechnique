@@ -1,7 +1,7 @@
-package artframe.study.sunshine.artframe.presenter.contract;
+package study.presenter.contract;
 
-import artframe.study.sunshine.artframe.base.BasePresenter;
-import artframe.study.sunshine.artframe.base.BaseView;
+import study.base.BasePresenter;
+import study.base.BaseView;
 
 /**
  * Created by xiaofeng on 2017/1/10.

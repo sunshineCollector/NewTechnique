@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.utils;
+package study.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

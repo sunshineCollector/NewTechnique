@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.base;
+package study.base;
 
 /**
  * Created by xiaofeng on 2016/12/20.

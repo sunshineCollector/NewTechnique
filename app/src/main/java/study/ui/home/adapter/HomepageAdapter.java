@@ -1,4 +1,4 @@
-package artframe.study.sunshine.artframe.ui.home.adapter;
+package study.ui.home.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,9 +15,9 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import artframe.study.sunshine.artframe.R;
-import artframe.study.sunshine.artframe.model.bean.FruitBean;
-import artframe.study.sunshine.artframe.ui.fruit.FruitActivity;
+import study.model.bean.FruitBean;
+import study.sunshine.newTechnique.R;
+import study.ui.fruit.FruitActivity;
 
 /**
  * Created by xiaofeng on 2016/12/29.
