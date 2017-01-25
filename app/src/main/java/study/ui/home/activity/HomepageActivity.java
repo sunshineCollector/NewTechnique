@@ -165,7 +165,6 @@ public class HomepageActivity extends BaseActivity<HomepagePresenter> implements
     @Override
     public void refreshFruitAdapter(HomepageAdapter adapter) {
         adapter.notifyDataSetChanged();
-        mSwipeRefresh.setRefreshing(false);
     }
 
     @Override

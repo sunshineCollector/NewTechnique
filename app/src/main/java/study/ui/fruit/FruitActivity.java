@@ -1,6 +1,6 @@
 package study.ui.fruit;
 
-import android.content.Intent;
+import android.support.annotation.IdRes;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
@@ -41,21 +41,15 @@ public class FruitActivity extends BaseActivity<FruitPresenter> implements Fruit
 
     @Override
     protected void initConfig() {
-
-    }
-
-    @Override
-    protected void initEvent() {
-        Intent intent = getIntent();
-        String fruitName = intent.getStringExtra(FRUIT_NAME);
-        int fruitImageId = intent.getIntExtra(FRUIT_IMAEG_ID, 0);
         setSupportActionBar(mToolbar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null)
             actionBar.setDisplayHomeAsUpEnabled(true);
-        mCollapsingToolbar.setTitle(fruitName);
-        Glide.with(this).load(fruitImageId).into(mImvFruitView);
-        mTvFruitContent.setText(generateFruitContent(fruitName));
+    }
+
+    @Override
+    protected void initEvent() {
+
     }
 
     @Override
@@ -65,15 +59,7 @@ public class FruitActivity extends BaseActivity<FruitPresenter> implements Fruit
 
     @Override
     protected boolean isNeedLoadCacheData() {
-        return false;
-    }
-
-    private String generateFruitContent(String fruitName) {
-        StringBuilder fruitContent = new StringBuilder();
-        for (int i = 0; i < 500; i++) {
-            fruitContent.append(fruitName);
-        }
-        return fruitContent.toString();
+        return true;
     }
 
     @Override
@@ -99,5 +85,30 @@ public class FruitActivity extends BaseActivity<FruitPresenter> implements Fruit
     @Override
     public void setRefreshing(boolean refreshing) {
 
+    }
+
+    @Override
+    public void setToolbarTitle(String title) {
+        mCollapsingToolbar.setTitle(title);
+    }
+
+    @Override
+    public void setFruitContent(String content) {
+        mTvFruitContent.setText(content);
+    }
+
+    @Override
+    public String getFruitTitleByIntentKey(String key) {
+        return getIntent().getStringExtra(key);
+    }
+
+    @Override
+    public int getFruitImgIdByIntentKey(String key,int defValue) {
+        return getIntent().getIntExtra(key,defValue);
+    }
+
+    @Override
+    public void setFruitViewById(@IdRes int id) {
+        Glide.with(this).load(id).into(mImvFruitView);
     }
 }
